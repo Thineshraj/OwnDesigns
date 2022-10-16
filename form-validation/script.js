@@ -70,4 +70,7 @@ function passwordValidation(e) {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   console.log(`Username: ${username.value}, Email: ${email.value}`);
+  username.value = '';
+  email.value = '';
+  password.value = '';
 });
